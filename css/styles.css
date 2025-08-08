@@ -1,0 +1,90 @@
+@import url('https://fonts.cdnfonts.com/css/quicksand');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+:root {
+    --primary_color: #4A2C2A;
+    --secondary_color: #8A8C66;
+    --accent_color_1: #E97451;
+    --accent_color_2: #FFD700;
+    --text_color: #F5F5DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary_color);
+    font-family: 'Roboto Light', sans-serif;
+    color: var(--text_color);
+}
+
+.information_Header {
+    background-color: var(--accent_color_2);
+    color: var(--primary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.main_Header{
+    padding: 10px;
+    background-color: var(--text_color);
+    color: var(--primary_color);
+    display: flex;
+}
+
+.div_left{
+    display: flex;
+    width: 100%;
+}
+
+.div_right{
+    align-content: center;
+    padding-right: 50px;
+}
+
+.header_options{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    align-content: center;
+    align-items: center;
+}
+
+li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--primary_color);
+}
+.logo{
+    width: 80px;
+    height: 60px;
+}
+
+.header_button {
+    width: 140px;                
+    height: 40px;               
+    padding: 5px;                
+    border-radius: 10px;         
+    background-color: var(--accent_color_1);
+    font-family: 'Quicksand Bold', sans-serif;
+    font-size: larger;
+    color: var(--text_color);
+    font-weight: bold;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
