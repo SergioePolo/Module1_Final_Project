@@ -12,53 +12,56 @@
 </head>
 
 <body>
-    <header class="information_Header">
+    <header class="information_Header flex-center">
         <h2>Reserva tu próxima mesa</h2>
     </header>
-    <nav class="main_Header">
-        <div class="div_left">
-            <img src="./assets/Logo/Logo.png" alt="Logo de MatchFood" class="logo">
-            <ul class="header_options">
-                <li><a href="" class="header_Links">Explorar Restaurantes</a></li>
-                <li><a href="" class="header_Links">Acerca de Nosotros</a></li>
-                <li><a href="" class="header_Links">Privacidad y Seguridad</a></li>
+
+    <nav class="main_Header flex-between">
+        <div class="flex-center gap-20">
+            <a href="#"><img src="./assets/Logo/Logo.png" alt="MatchFood - Logo" class="logo"></a>
+            <ul class="header_options flex-center gap-20">
+                <li><a href="#" class="link link-header">Explorar Restaurantes</a></li>
+                <li><a href="#" class="link link-header">Acerca de Nosotros</a></li>
+                <li><a href="#" class="link link-header">Privacidad y Seguridad</a></li>
             </ul>
         </div>
-        <div class="div_right">
-            <button class="header_button">
-                Iniciar Sesión
-            </button>
-        </div>
+        <a class="btn btn-accent" href="./pages/login.html">Iniciar Sesión</a>
     </nav>
-    <main>
-        <button>Crea tu cuenta</button>
+
+    <main class="flex-center">
+        <div class="main_content">
+            <h1>Miles de cocinas esperan que las conozcas</h1>
+            <button class="btn btn-accent">Crea tu cuenta</button>
+        </div>
     </main>
+
     <footer class="footer">
         <div class="inner_Footer">
-            <img src="./assets/Logo/Logo.png" alt="Logo de MatchFood" class="logo">
-            <table class="text-center">
-                <tr>
-                    <th>Compañía</th>
-                    <th>Soporte</th>
-                    <th>Únete a la Comunidad MatchFood</th>
-                </tr>
-                <tr>
-                    <td><a href="" class="footer_Links">Sobre MatchFood</a></td>
-                    <td><a href="" class="footer_Links">Preguntas Frecuentes (FAQ)</a></td>
-                    <td><a href="" class="footer_Links">Cómo usuario</a></td>
-                </tr>
-                <tr>
-                    <td><a href="" class="footer_Links">Cómo Funciona</a></td>
-                    <td><a href="" class="footer_Links">Centro de Ayuda</a></td>
-                    <td><a href="" class="footer_Links">Cómo socio restaurante</a></td>
-                </tr>
-                <tr>
-                    <td><a href="" class="footer_Links">Guía de uso</a></td>
-                </tr>
-            </table>
+            <img src="../assets/Logo/Logo.png" alt="MatchFood - Logo" class="logo">
+
+            <div class="footer_container">
+                <div class="footer_column">
+                    <h4>Compañía</h4>
+                    <a href="#" class="link link-footer">Sobre MatchFood</a>
+                    <a href="#" class="link link-footer">Cómo Funciona</a>
+                    <a href="#" class="link link-footer">Guía de uso</a>
+                </div>
+                <div class="footer_column">
+                    <h4>Soporte</h4>
+                    <a href="#" class="link link-footer">Preguntas Frecuentes (FAQ)</a>
+                    <a href="#" class="link link-footer">Centro de Ayuda</a>
+                </div>
+                <div class="footer_column">
+                    <h4>Únete a la Comunidad MatchFood</h4>
+                    <a href="#" class="link link-footer">Como usuario</a>
+                    <a href="#" class="link link-footer">Como socio restaurante</a>
+                </div>
+            </div>
         </div>
+
         <p>&copy; 2025 MatchFood, Todos los derechos reservados</p>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

@@ -1,0 +1,171 @@
+@import url('styles.css');
+
+.card {
+    background-color: var(--text_color);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    max-width: 1000px; /* Prevent too-wide cards on large screens */
+    margin: auto;
+}
+
+.card_image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary_color);
+}
+
+.card_image img {
+    background: none;
+    border-radius: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Keeps image proportions consistent */
+}
+
+.card_body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card_body p {
+    font-size: small;
+    font-family: var(--font-alt);
+}
+
+.card_title {
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+.card_title p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    flex: 1 1 auto;
+    max-width: 100%;
+}
+
+.avatar_group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_interaction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.card_interaction button {
+    border: none;
+    background: none;
+    color: var(--primary_color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.card_interaction button:hover {
+    color: var(--accent_color_1);
+}
+
+.card_comment_section {
+    flex: 1;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.comment_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    padding-bottom: 5px;
+}
+
+.card_createComment {
+    display: flex;
+}
+
+.card_createComment textarea {
+    border: none;
+    background-color: var(--text_color);
+    resize: none;
+    flex: 1;
+    padding: 5px;
+    outline: none;
+    font-family: var(--font-alt);
+    color: var(--primary_color);
+}
+
+.card_createComment button {
+    border-style: none;
+    background-color: var(--text_color);
+    width: 50px;
+    color: var(--primary_color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.card_createComment button:hover {
+    color: var(--accent_color_1);
+}
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .card_image {
+        width: 100%;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Small phone breakpoint */
+@media (max-width: 480px) {
+    .card {
+        margin: 10px;
+    }
+
+    .card_body p {
+        font-size: 0.85rem;
+    }
+
+    .card_interaction {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .avatar_group p {
+        font-size: 0.9rem;
+    }
+
+    .footer_container {
+        gap: 10px;
+    }
+
+    .footer_column h4 {
+        font-size: 1rem;
+    }
+
+    .footer_column a {
+        font-size: 0.9rem;
+    }
+}
