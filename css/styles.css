@@ -227,6 +227,45 @@ main {
     line-height: 1.2;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 300px;
+    margin: 10px;
+    background-color: var(--text_color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+form h2{
+    font-family: var(--font-main);
+    color: var(--accent_color_1);
+    font-weight: bold;
+}
+
+label{
+    font-family: var(--font-alt);
+    color: var(--primary_color);
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+input{
+    background-color: var(--text_color);
+    border: 1px solid var(--primary_color);
+    border-radius: 5px;
+    padding: 5px; 
+}
+
 @media (max-width: 480px) {
     .footer {
         padding: 15px;

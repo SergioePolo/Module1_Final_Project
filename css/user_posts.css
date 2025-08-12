@@ -59,7 +59,7 @@
 
 .card_interaction {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 10px;
     padding: 5px;
     border-bottom: 1px solid white;
@@ -150,7 +150,7 @@
 
     .card_interaction {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
     }
 
     .avatar_group p {
