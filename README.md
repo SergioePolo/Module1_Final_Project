@@ -20,10 +20,10 @@ MatchFood es una red social especializada en restaurantes locales. La idea del p
 
 ## Interfaces:
 
-![Diagrama](../Module1_Final_Project/assets/inicioSesion.png)
-![Diagrama](../Module1_Final_Project/assets/inicio.png)
-![Diagrama](../Module1_Final_Project/assets/perfil.png)
-![Diagrama](../Module1_Final_Project/assets/publicaciones.png)
+<img src="./assets/inicioSesion.png" alt="Inicio de Sesión">
+<img src="./assets/inicio.png" alt="Main">
+<img src="./assets/perfil.png" alt="Perfil de usuario">
+<img src="./assets/publicaciones.png" alt="Publicaciones">
 
 ## 📌 Autores:
 
@@ -32,7 +32,7 @@ MatchFood es una red social especializada en restaurantes locales. La idea del p
 **Juan Mora** 
 
 [GitHub] (https://github.com/SergioePolo/Module1_Final_Project)
-https://sergioepolo.github.io/Module1_Final_Project/
+[GitHub Pages] https://sergioepolo.github.io/Module1_Final_Project/
 
 
 
