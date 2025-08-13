@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: row;
     border: none;
-    max-width: 1000px; /* Prevent too-wide cards on large screens */
-    margin: auto;
+    max-width: 1000px;
+    margin: 20px;
 }
 
 .card_image {
@@ -24,7 +24,7 @@
     border-radius: none;
     width: 100%;
     height: auto;
-    object-fit: cover; /* Keeps image proportions consistent */
+    object-fit: cover;
 }
 
 .card_body {
@@ -90,11 +90,42 @@
     gap: 10px;
     height: 50px;
     padding-bottom: 5px;
+    width: 100%;
+}
+
+.comment_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding-bottom: 5px;
+    width: 100%;
+    flex: 1;
+}
+
+.comment_buttons div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.comment_title button {
+    border: none;
+    background: none;
+    color: var(--primary_color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.comment_title button:hover {
+    color: var(--accent_color_1);
 }
 
 .card_createComment {
     display: flex;
 }
+
+
 
 .card_createComment textarea {
     border: none;

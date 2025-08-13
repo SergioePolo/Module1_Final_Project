@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
     <link rel="icon" type="image/x-icon" href="../assets/Logo/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/profile.css">
 </head>
+
 <body>
-   
+
     <header class="information_Header">
         <h2>Reserva tu próxima mesa</h2>
     </header>
-    
+
     <nav class="main_Header">
         <div class="div_left">
             <img class="fotoPerfil" src="../assets/Logo/Logo.png" alt="Logo de MatchFood">
-            <div class="ubicacion">
-                <img src="../assets/mingcute--location-line.svg" alt="Tu ubicacion actual">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1">
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
+                        <path d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0" />
+                    </g>
+                </svg>
             </div>
             <div class="ubicacion2">
                 <p>Bogotá, Colombia</p>
             </div>
         </div>
-        
-        
+
+
         <div class="profile-section">
-            
-            <img src="../assets/mdi-light--bell.svg" alt="Notificaciones" class="bell-icon">
-            
-            
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                    d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3H4a4 4 0 0 0 2-3v-3a7 7 0 0 1 4-6M9 17v1a3 3 0 0 0 6 0v-1" />
+            </svg>
+
             <div class="dropdown">
                 <button class="MenuDesplegable" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="../assets/fotoDePerfil.png" class="rounded-circle" height="65" alt="Tu Foto de perfil">
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Inicio</a></li>
-                    <li><a class="dropdown-item" href="profile.html">Mi Perfil</a></li>
-                    <li><a class="dropdown-item" href="#">Mis publicaciones</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/login.html">Salir de MatchFood</a></li>
+                    <li><a class="dropdown-item" href="../pages/main.html">Inicio</a></li>
+                    <li><a class="dropdown-item" href="../pages/profile.html">Mi Perfil</a></li>
+                    <li><a class="dropdown-item" href="../pages/user_posts.html">Mis publicaciones</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../index.html">Salir de MatchFood</a></li>
                 </ul>
             </div>
         </div>
@@ -53,9 +65,11 @@
             <section class="tarjeta perfil">
                 <h2>Tu perfil</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icono-perfil" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
-                        <path d="M19.875 6.27A2.23 2.23 0 0 1 21 8.218v7.284c0 .809-.443 1.555-1.158 1.948l-6.75 4.27a2.27 2.27 0 0 1-2.184 0l-6.75-4.27A2.23 2.23 0 0 1 3 15.502V8.217c0-.809.443-1.554 1.158-1.947l6.75-3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98z"/>
-                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0"/>
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1">
+                        <path
+                            d="M19.875 6.27A2.23 2.23 0 0 1 21 8.218v7.284c0 .809-.443 1.555-1.158 1.948l-6.75 4.27a2.27 2.27 0 0 1-2.184 0l-6.75-4.27A2.23 2.23 0 0 1 3 15.502V8.217c0-.809.443-1.554 1.158-1.947l6.75-3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98z" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0" />
                     </g>
                 </svg>
                 <div class="contenido-perfil">
@@ -91,59 +105,82 @@
         <div class="columna2">
             <section class="tarjeta publicaciones">
                 <h2>Tus publicaciones recientes</h2>
-                
+
                 <div class="publicacion">
-                    <img src="../assets/sopitas.png" alt="restaurante" class="imagen-publicacion"> 
+                    <img src="../assets/sopitas.png" alt="restaurante" class="imagen-publicacion">
                     <div class="restaurante">
                         <h3>Sopitas y frijoladas</h3>
-                        <p>📍 Teusaquillo</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1">
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
+                                    <path
+                                        d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0" />
+                                </g>
+                            </svg> Teusaquillo</p>
                         <p class="estrellas">⭐⭐⭐⭐☆</p>
                         <p>Hace 1 mes</p>
-                        <p>Un restaurante rico, rápido y variado, perfecto para disfrutar un almuerzo local, es un poco pequeño pero el resto es muy bueno.</p>
+                        <p>Un restaurante rico, rápido y variado, perfecto para disfrutar un almuerzo local, es un poco
+                            pequeño pero el resto es muy bueno.</p>
                     </div>
                     <div class="corazon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.62 20.455a3.185 3.185 0 0 1-1.24 0C5.114 18.256 0 14.545 0 8.544 0 4.225 3.513.729 7.857.729c2.316 0 4.316 1.077 5.753 2.871C14.73 1.806 16.73 0 18.91 0c4.344 0 7.857 3.496 7.857 7.794 0 6.002-5.114 9.713-12.287 11.92z"/>
+                            <path
+                                d="M12.62 20.455a3.185 3.185 0 0 1-1.24 0C5.114 18.256 0 14.545 0 8.544 0 4.225 3.513.729 7.857.729c2.316 0 4.316 1.077 5.753 2.871C14.73 1.806 16.73 0 18.91 0c4.344 0 7.857 3.496 7.857 7.794 0 6.002-5.114 9.713-12.287 11.92z" />
                         </svg>
                         <span class="likes">17</span>
-                        <a href="user-posts.html" class="ver-mas">Ver más</a>
                     </div>
                 </div>
-             
+
 
                 <div class="publicacion">
-                    <img src="../assets/ramen.png" alt="restaurante" class="imagen-publicacion"> 
+                    <img src="../assets/ramen.png" alt="restaurante" class="imagen-publicacion">
                     <div class="restaurante">
                         <h3>Ramen House</h3>
-                        <p>📍 Chapinero</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1">
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
+                                    <path
+                                        d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0" />
+                                </g>
+                            </svg> Chapinero</p>
                         <p class="estrellas">⭐⭐⭐⭐⭐</p>
                         <p>Hace 2 semanas</p>
                         <p>Me gustó mucho la ambientación del lugar, la comida deliciosa.</p>
                     </div>
                     <div class="corazon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.62 20.455a3.185 3.185 0 0 1-1.24 0C5.114 18.256 0 14.545 0 8.544 0 4.225 3.513.729 7.857.729c2.316 0 4.316 1.077 5.753 2.871C14.73 1.806 16.73 0 18.91 0c4.344 0 7.857 3.496 7.857 7.794 0 6.002-5.114 9.713-12.287 11.92z"/>
+                            <path
+                                d="M12.62 20.455a3.185 3.185 0 0 1-1.24 0C5.114 18.256 0 14.545 0 8.544 0 4.225 3.513.729 7.857.729c2.316 0 4.316 1.077 5.753 2.871C14.73 1.806 16.73 0 18.91 0c4.344 0 7.857 3.496 7.857 7.794 0 6.002-5.114 9.713-12.287 11.92z" />
                         </svg>
                         <span class="likes">9</span>
-                        <a href="user-posts.html" class="ver-mas">Ver más</a>
                     </div>
                 </div>
 
                 <div class="publicacion">
-                    <img src="../assets/sabor.png" alt="restaurante" class="imagen-publicacion"> 
+                    <img src="../assets/sabor.png" alt="restaurante" class="imagen-publicacion">
                     <div class="restaurante">
                         <h3>Sabor criollo</h3>
-                        <p>📍 Chapinero</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1">
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
+                                    <path
+                                        d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0" />
+                                </g>
+                            </svg> Chapinero</p>
                         <p class="estrellas">⭐⭐⭐☆☆</p>
                         <p>Hace 5 días</p>
-                        <p>Tiene una buena comida, pero es un poco demorado en la atención y tienes que hacer fila para entrar.</p>
+                        <p>Tiene una buena comida, pero es un poco demorado en la atención y tienes que hacer fila para
+                            entrar.</p>
                     </div>
                     <div class="corazon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.62 20.455a3.185 3.185 0 0 1-1.24 0C5.114 18.256 0 14.545 0 8.544 0 4.225 3.513.729 7.857.729c2.316 0 4.316 1.077 5.753 2.871C14.73 1.806 16.73 0 18.91 0c4.344 0 7.857 3.496 7.857 7.794 0 6.002-5.114 9.713-12.287 11.92z"/>
+                            <path
+                                d="M12.62 20.455a3.185 3.185 0 0 1-1.24 0C5.114 18.256 0 14.545 0 8.544 0 4.225 3.513.729 7.857.729c2.316 0 4.316 1.077 5.753 2.871C14.73 1.806 16.73 0 18.91 0c4.344 0 7.857 3.496 7.857 7.794 0 6.002-5.114 9.713-12.287 11.92z" />
                         </svg>
                         <span class="likes">3</span>
-                        <a href="user-posts.html" class="ver-mas">Ver más</a>
                     </div>
                 </div>
             </section>
@@ -181,4 +218,5 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

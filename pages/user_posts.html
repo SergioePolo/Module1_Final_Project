@@ -10,22 +10,42 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/user_posts.css">
+        <link rel="stylesheet" href="../css/profile.css">
 </head>
 
 <body>
     <header class="information_Header">
         <h2>Reserva tu próxima mesa</h2>
     </header>
-    <nav class="main_Header flex-between">
-        <div class="flex-center gap-20">
-            <a href="../index.html"><img src="../assets/Logo/Logo.png" alt="Logo de MatchFood" class="logo"></a>
-            <ul class="header_options flex-center gap-20">
-                <li><a href="" class="link link-header">Explorar Restaurantes</a></li>
-                <li><a href="" class="link link-header">Acerca de Nosotros</a></li>
-                <li><a href="" class="link link-header">Privacidad y Seguridad</a></li>
-            </ul>
+    <nav class="main_Header">
+        <div class="div_left">
+            <img class="fotoPerfil" src="../assets/Logo/Logo.png" alt="Logo de MatchFood">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/><path d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0"/></g></svg>
+            </div>
+            <div class="ubicacion2">
+                <p>Bogotá, Colombia</p>
+            </div>
         </div>
-        <a class="btn btn-accent" href="#">Iniciar Sesión</a>
+        
+        
+        <div class="profile-section">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3H4a4 4 0 0 0 2-3v-3a7 7 0 0 1 4-6M9 17v1a3 3 0 0 0 6 0v-1"/></svg>
+            
+            <div class="dropdown">
+                <button class="MenuDesplegable" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../assets/fotoDePerfil.png" class="rounded-circle" height="65" alt="Tu Foto de perfil">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="../pages/main.html">Inicio</a></li>
+                    <li><a class="dropdown-item" href="../pages/profile.html">Mi Perfil</a></li>
+                    <li><a class="dropdown-item" href="../pages/user_posts.html">Mis publicaciones</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../index.html">Salir de MatchFood</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <main>
         <div class="card">
@@ -46,7 +66,7 @@
                 </div>
 
                 <div class="card_interaction">
-                    <button aria-label="Me gusta">
+                    <button aria-label="Me gusta" onclick="like(this)">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="1"
